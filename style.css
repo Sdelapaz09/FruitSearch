@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+  background: linear-gradient(117deg, #face3e, #fa5b12) no-repeat fixed;
+  background-size: cover;
+  padding: 0 2px;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .searchInput{
+  background: #fff;
+  width: 100%;
+  border-raidus: 5px;
+  position: relative;
+  box-shadow: 0px 16px 3px(0,0,0,0.12);
+}
+
+.searchInput input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 16px 3px rgba(0,0,0,0.1);
+}
+
+.searchInput.active input{
+  border-radius: 5px 5px 0;
+}
+
+.wrapper .suggestions{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.searchInput.active .suggestions{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.suggestions li{
+  list-stlye: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.searchInput.active .suggestions lis{
+  display: block;
+}
+
+.suggestions li:hover{
+  background: #efefef;
+}
+
+.searchInput .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  cursor: pointer;
+}
