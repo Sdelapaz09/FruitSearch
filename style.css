@@ -11,6 +11,11 @@ body{
   padding: 0 2px;
 }
 
+::selection{
+  color: #fff;
+  background: #fa5b12;
+}
+
 .wrapper{
   max-width: 450px;
   margin: 150px auto;
@@ -28,6 +33,7 @@ body{
   height: 55px;
   width: 100%;
   outline: none;
+  border: none;
   border-radius: 5px;
   padding: 0 60px 0 20px;
   font-size: 18px;
@@ -53,9 +59,8 @@ body{
 }
 
 .suggestions li{
-  list-stlye: none;
+  list-style: none;
   padding: 8px 12px;
-  display: none;
   width: 100%;
   cursor: default;
   border-radius: 3px;
@@ -63,6 +68,7 @@ body{
 
 .searchInput.active .suggestions lis{
   display: block;
+  overflow: hidden;
 }
 
 .suggestions li:hover{
@@ -79,4 +85,5 @@ body{
   line-height: 55px;
   font-size: 20px;
   cursor: pointer;
+  overflow: hidden;
 }
