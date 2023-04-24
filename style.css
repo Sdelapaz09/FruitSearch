@@ -16,6 +16,7 @@ body{
   background: #fa5b12;
 }
 
+
 .wrapper{
   max-width: 450px;
   margin: 150px auto;
@@ -24,7 +25,7 @@ body{
 .wrapper .searchInput{
   background: #fff;
   width: 100%;
-  border-raidus: 5px;
+  border-radius: 5px;
   position: relative;
   box-shadow: 0px 16px 3px(0,0,0,0.12);
 }
@@ -66,7 +67,7 @@ body{
   border-radius: 3px;
 }
 
-.searchInput.active .suggestions lis{
+.searchInput.active .suggestions li{
   display: block;
   overflow: hidden;
 }
