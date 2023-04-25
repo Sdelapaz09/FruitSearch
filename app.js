@@ -8,6 +8,7 @@ let linkTag = searchInput.querySelector("a");
 let webLink;
 
 input.onkeyup = (e) => {
+  suggBox.innerHTML = '';
   let userData = e.target.value;
   let emptyArr = [];
   if(userData){
@@ -29,6 +30,7 @@ input.onkeyup = (e) => {
 }
 
 function select(element){
+  suggBox.innerHTML = '';
   let selectData = element.textContent;
   input.value = selectData;
   icon.onclick = () => {
